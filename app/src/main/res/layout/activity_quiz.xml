@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+
+>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/qNumber"
+              android:text="100"
+              android:layout_marginBottom="20dp"
+              android:layout_marginLeft="300dp"
+              android:textSize="14sp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="20dp"
+                  android:layout_above="@+id/btnNextQuestion"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtQuestion"
+                  android:text="Identify the bird in picture."
+                 android:layout_marginBottom="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="21sp"/>
+
+        <ImageView android:layout_width="200dp"
+                   android:layout_height="150dp"
+
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="100dp"
+                   android:layout_marginEnd="100dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginLeft="100dp"
+                   android:layout_marginStart="100dp"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/qimg"
+
+        />
+
+        <RadioGroup android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/options"
+        >
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radioOptionOne"
+                         android:layout_marginTop="20dp"
+                         android:textSize="18sp"
+                         android:tag="100"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radioOptionTwo"
+                         android:layout_marginTop="20dp"
+                         android:textSize="18sp"
+                         android:tag="200"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radioOptionThree"
+                         android:layout_marginTop="20dp"
+                         android:textSize="18sp"
+                         android:tag="300"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radioOptionFour"
+                         android:layout_marginTop="20dp"
+                         android:textSize="18sp"
+                         android:tag="400"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:textSize="21sp"
+            android:textColor="#FFFFFF"
+            android:text="Next"
+            android:id="@+id/btnNextQuestion"
+    />
+
+</RelativeLayout>
